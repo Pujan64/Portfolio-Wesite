@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pujan-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+            font-size: 1.05rem;
+
+        }
+
+        .right {
+            text-decoration: none;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 2rem;
+
+        }
+
+        .leftsection .btn {
+            background-color: rgb(138 43 226);
+            color: white;
+            padding: 10px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn a {
+            color: white;
+            /* Ensure link text is white */
+            text-decoration: none;
+            /* Remove underline from link */
+        }
+
+
+        .leftsection .buttons {
+            padding: 20px;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet
+        }
+
+        #element {
+            color: blueviolet;
+        }
+
+        main hr {
+            background-color: blueviolet;
+            height: 1.2px;
+            border: none;
+            margin: 5px 2px;
+        }
+
+        .secondsection {
+            max-width: 80pc;
+            margin-top: 50px;
+
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            margin-left: 130px;
+
+        }
+
+        .gray {
+            color: gray;
+            font-size: small;
+            margin-left: 130px;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            margin-bottom: 600px;
+            margin-left: 135px;
+            margin-top: 5px;
+
+        }
+
+        .secondsection .vertical {
+            background-color: white;
+            height: 93px;
+            width: 1px;
+            margin: 0 300px;
+
+
+        }
+
+
+        .image-top {
+
+            height: 35px;
+            position: relative;
+            top: -36px;
+            left: -100px;
+        }
+
+        .footer {
+            background-color: rgb(27 34 51);
+            height: 200px;
+            padding: 10px;
+        }
+
+        .footer p {
+            text-align: center;
+
+            margin-bottom: 60px;
+        }
+
+        #element2 {
+            color: blueviolet;
+            font-size: 2rem;
+        }
+
+        .enimation {
+            margin-top: 50px;
+        }
+
+
+
+        .verticalheading {
+            position: relative;
+            top: 92px;
+            font-size: 1.5rem;
+            width: 150px;
+        }
+
+        .verticalpara {
+            color: gray;
+            font-size: 12px;
+            position: relative;
+            top: 97px;
+            width: 15rem;
+
+
+        }
+
+        main .hr2 {
+            background-color: blueviolet;
+            height: 1.2px;
+            border: none;
+            margin: 5px 2px;
+        }
+
+        .thirdsection {
+            display: flex;
+            justify-content: space-between;
+            max-width: 80%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .leftsection {
+            width: 45%;
+            margin-bottom: 35px;
+        }
+
+        .leftsection h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .leftsection p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .education-table {
+            width: 100%;
+            border-spacing: 0;
+            margin-bottom: 30px;
+        }
+
+        .education-table th,
+        .education-table td {
+            border: 1px solid transparent;
+
+            padding: 8px;
+
+            text-align: center;
+        }
+
+        .education-table th {
+            background-color: rgb(18, 18, 62);
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .education-table td {
+            background-color: rgb(7, 7, 37);
+            font-size: 18px;
+        }
+
+        .education-table td[contenteditable="true"] {
+            outline: none;
+        }
+
+
+
+        .rightsection {
+            width: 45%;
+        }
+
+        .gray2 {
+            color: gray;
+            font-size: small;
+        }
+
+        .rightsection p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .arrow {
+            position: relative;
+            height: 13px;
+            top: 367px;
+            right: 402px;
+        }
+
+        .paragraphofachive {
+            color: white;
+            position: relative;
+            top: 92px;
+            width: 16rem;
+            font-size: 14px;
+            margin-top: 10px;
+            background-color: blue;
+            border-radius: 3px;
+            justify-content: center;
+            padding-left: 18px;
+            padding: 10px;
+            padding-left: 38px;
+        }
+
+
+        .paragraphofachive a {
+            text-decoration: none;
+
+            color: rgb(255, 255, 255);
+
+
+        }
+
+        .paragraphofachive a:hover {
+            font-size: 13px;
+
+            color: rgb(255, 255, 255);
+
+
+        }
+
+        .leftsection .btn img {
+            margin-right: 5px;
+            /* add some space between the logo and the text */
+            vertical-align: middle;
+            /* align the logo with the text */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Pujan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is<span class="purple"> Pujan</span>
+                <div>and I am a Passionate</div>
+                <span id="element">Web Devloper</span>
+
+                <div class="buttons">
+                    <button class="btn">
+                        <a href="pujan resume.pdf" download>Download Resume</a>
+                      </button>
+                    <button >
+                        <a href="https://www.linkedin.com/in/patelpujan64/?original_referer=http%3A%2F%2F127.0.0.1%3A5500%2F" target="_blank">
+                            <img src="174857.png"
+                                alt="likein Logo" width="16" height="16">
+                            
+                        </a>
+
+                    </button>
+                    <button >
+                        <a href="https://github.com/Pujan64" target="_blank">
+                            <img src="https://play-lh.googleusercontent.com/PCpXdqvUWfCW1mXhH1Y_98yBpgsWxuTSTofy3NGMo9yBTATDyzVkqU580bfSln50bFU"
+                                alt="GitHub Logo" width="16" height="16">
+                            
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg1-removebg-preview.png" alt="">
+            </div>
+        </section>
+        <hr class="hr">
+        <section class="secondsection">
+            <span class="gray">What I have Achived </span>
+            <h1>Achivments</h1>
+
+
+
+            <div class="imagesss">
+                <img src="arrow-removebg-preview (1).png" alt="" class="arrow">
+                <img src="1stt.png" alt="" class="image-top">
+            </div>
+
+
+
+
+
+            <div class="box">
+                <div class="vertical">
+
+                    <div class="verticalheading">Data Analytics</div>
+                    <div class="verticalpara"> I have earned the Google Data Analytics Certificate, demonstrating my
+                        proficiency in utilizing Google tools such as Google Analytics, along with SQL for data
+                        querying. This certification has equipped me with the skills to effectively analyze, clean, and
+                        visualize data, enabling informed decision-making and strategic insights in data-driven
+                        environments.</div>
+
+
+
+
+                    <div class="paragraphofachive">
+                        <a href="https://coursera.org/share/124820fd18ebb0e5e0ea7fe017117b40" target="_blank">
+                            Google data analytics certificate
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+                <div class="vertical">
+
+                    <div class="verticalheading">Aws Cloud Aechitecture</div>
+                    <div class="verticalpara"> I'm excited to have earned the AWS Cloud Architecture Certificate,
+                        showcasing my ability to design and implement scalable cloud solutions on Amazon Web Services.
+                        This certification validates my expertise in creating efficient and resilient cloud
+                        infrastructures to support business objectives. I'm eager to apply these skills to drive
+                        innovation and enhance operational efficiency in cloud environments.</div>
+
+
+                    <div class="paragraphofachive">
+                        <a href="https://www.credly.com/badges/17bf2bbe-2b80-4f8e-9fea-131693b30c2d/public_url"
+                            target="_blank">
+                            AWS Cloud Architecture Certificate
+                        </a>
+                    </div>
+
+
+
+                </div>
+
+        </section>
+
+        <hr class="hr">
+        <section class="thirdsection">
+
+            <!-- Left Section -->
+            <div class="leftsection">
+                <span class="gray2">MY Education Details </span>
+                <h1 class="lefth1">Education</h1>
+                <p class="leftp">Currently pursuing a Bachelor's degree in Computer Engineering at Silveroak University,
+                    with a strong academic record. Completed 10th and 12th standards at Madhav International School.</p>
+
+                <!-- Education Details Table -->
+                <table class="education-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>SPI</th>
+                            <th>CPI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1st Year </td>
+                            <td>8.72 </td>
+                            <td>8.60</td>
+                        </tr>
+                        <tr>
+                            <td>2nd Year</td>
+                            <td>9.39</td>
+                            <td>8.91</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Right Section (Empty for now) -->
+            <div class="rightsection">
+                <p></p>
+            </div>
+
+        </section>
+
+
+
+        <footer class="footer">
+            <p class="enimation">Designed by <span id="element2"> Pujan Patel </span>
+            <p> </p>
+            <p class="ftitle">Contact No. :- 7984360610 || Email id :- patelpujan564@gmail.com <br>
+                &#169 2024 Pujan-Portfolio. All rights reserved.</p>
+
+        </footer>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['', 'Web Devloper', 'Python Devloper'],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#element2', {
+            strings: ['', ' Pujan Patel'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
